@@ -26,3 +26,5 @@ hs_err_pid*
 /demoGroovy/.mvn
 /demoJava/.mvn
 /kotin-learning/.mvn
+/out/
+/my-app/target
