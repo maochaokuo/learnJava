@@ -38,7 +38,18 @@ mvn package
 [ERROR] Source option 5 is no longer supported. Use 7 or later.
 [ERROR] Target option 5 is no longer supported. Use 7 or later.
 ```
-   
+4. update pom.xml, refer to [Error “Source option 5 is no longer supported. Use 6 or later” on Maven compile](https://stackoverflow.com/questions/53034953/error-source-option-5-is-no-longer-supported-use-6-or-later-on-maven-compile)
+```dtd
+<properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+```  
+5. build ok, run
+```dtd
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+```
+ 
 ## log
 
 ### 2021/2/23
